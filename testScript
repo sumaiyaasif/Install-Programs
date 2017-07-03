@@ -2,3 +2,11 @@
 
 echo Installing Homebrew…
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo Installing wget…
+Brew install wget
+
+echo Installing Chrome…
+wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+open ~/Downloads/googlechrome.dmg
+sudo cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
