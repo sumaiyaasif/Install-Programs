@@ -21,6 +21,9 @@ chsh -s /bin/zsh
 echo Opening new window of terminal using zsh…
 open -a iTerm ~/Applications/
 
+echo Installing Oh My Zsh...
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo Installing Sublime 3…
 brew cask install sublime-text
 
